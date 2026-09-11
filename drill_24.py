@@ -1,26 +1,15 @@
 N = int(input("Enter a number N: "))
+reverse = 0
 
-previous = N % 10
-N = N // 10
-
-increasing = True 
-
-
-while N>0: 
+while N>0:
     digit = N%10
-    if digit>=previous:
-        increasing = False 
-        break
-    previous = digit
+    reverse = (reverse*10) + digit
     N = N//10
+    
+print(reverse)
 
-if increasing==False:
-    print("Number is not increasing")
+if reverse%3==0:
+    print("Reversed digit is divisible by 3")
 else:
-    print("Number is increasing")
-
-
+    print("Reversed digit is not divisible by 3")
     
-    
-        
-

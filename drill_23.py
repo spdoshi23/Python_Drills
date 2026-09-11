@@ -1,16 +1,26 @@
 N = int(input("Enter a number N: "))
 
-for k in range(N, 0, -1):
-    if k%4==0:
-        print(k)
+previous = N % 10
+N = N // 10
+
+increasing = True 
+
+
+while N>0: 
+    digit = N%10
+    if digit>=previous:
+        increasing = False 
         break
+    previous = digit
+    N = N//10
 
-#               ALTERNATE WAY
-N = int(input("Enter a number N: "))
+if increasing==False:
+    print("Number is not increasing")
+else:
+    print("Number is increasing")
 
-for k in range(4, N+1, 4):
-    if k+4>N:
-        break
-print(k)
 
+    
+    
+        
 
