@@ -14,19 +14,3 @@ if is_divisible_by_3:
 else:
     print("N doesn't have digits divisible by 3")
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
