@@ -13,8 +13,6 @@ def find_largest(numbers):
 print(find_largest([-4, 7, 2, -9, 15, 6]))
 
 
-name = "shushant"
-print(f"my name is {name}")
 
 
 
